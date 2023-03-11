@@ -1,13 +1,18 @@
-<div *ngFor="let todo of toDoList">
-  <div *ngIf="!todo.completed">
-    <br>
-    <div class="card text-center border-danger mb-3">
-      <div class="card-header">
-        <h2>Task {{todo.id}}</h2>
-      </div>
-      <div class="card-body text-danger">
-        <h5 class="card-title">{{todo.title | titlecase}}</h5>
-        <p class="card-text"></p>
+<div class="text-center">
+  <div>
+    <a class="btn btn-primary" [routerLink]="'/todo'">Tasks</a>
+  </div>
+  <div *ngFor="let todo of toDoList">
+    <div *ngIf="!todo.completed">
+      <br />
+      <div class="card border-danger mb-3 text-danger">
+        <div class="card-header">
+          <h2>Task {{ todo.id }}</h2>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{ todo.title | titlecase }}</h5>
+          <p class="card-text"></p>
+        </div>
       </div>
     </div>
   </div>

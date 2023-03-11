@@ -1,0 +1,17 @@
+<div class="card text-center" *ngIf="todo$ | async as todo">
+  <br />
+  <div class="card-header">
+    <h2>Task {{ todo.id }}</h2>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{ todo.title | titlecase }}</h5>
+    <p class="card-text"></p>
+    <div *ngIf="todo.completed">
+      <a href="#" class="btn btn-success">Completed</a>
+    </div>
+    <div *ngIf="!todo.completed">
+      <a href="#" class="btn btn-danger">Not Completed</a>
+    </div>
+  </div>
+</div>
+

@@ -1,8 +1,18 @@
 .card {
-  border: solid  1x black;
-  border-radius: 3px;
+
+  background-color: #edf1dc;
+  border-radius: 4px;
+  border: solid 1px black;
   padding: 3px;
   margin: 0 auto;
-  margin-top: 17%;
+  margin-top: 0.5%;
   width: 50%;
+  text-decoration: none;
+}
+
+.card a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  font-size: 1.2rem;
 }

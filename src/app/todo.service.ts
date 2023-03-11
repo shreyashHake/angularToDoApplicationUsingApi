@@ -1,6 +1,8 @@
 import { Injectable, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { ToDo } from './ToDo';
+import { map } from 'rxjs/operators';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -19,11 +21,17 @@ export class TodoService implements OnInit {
 
   }
 
+  ngOnInit(): void {
+
+  }
+
   getToDos() {
     return this.http.get<ToDo[]>(this.heroesUrl);
   }
 
-  ngOnInit(): void {
-
+  getToDo(id: number | string) {
+    return this.getToDos().pipe(
+      map((heroes: ToDo[]) => heroes.find(hero => hero.id === +id)!)
+    );
   }
 }
