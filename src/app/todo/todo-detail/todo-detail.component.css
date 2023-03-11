@@ -1,9 +1,9 @@
 .card {
-  border: solid 1x black;
+  border: solid 1px black;
   border-radius: 3px;
   padding: 3px;
   margin: 0 auto;
-  margin-top: 0.5%;
+  margin-top: 5%;
   width: 70%;
 }
 

@@ -10,3 +10,10 @@
 .text-center a {
   margin-top: 1%;
 }
+
+.card a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  font-size: 1.2rem;
+}
