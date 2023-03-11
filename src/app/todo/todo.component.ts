@@ -7,12 +7,12 @@ import { TodoService } from '../todo.service';
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.css']
 })
-export class TodoComponent implements OnInit{
+export class TodoComponent implements OnInit {
 
   toDoList: ToDo[] = [];
   doneOrNot: boolean = false;
 
-  constructor(private toDoServices : TodoService) {}
+  constructor(private toDoServices: TodoService) { }
 
   ngOnInit(): void {
     this.getToDo();

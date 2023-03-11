@@ -12,12 +12,12 @@ export class NotCompletedCompComponent implements OnInit {
 
   toDoList: ToDo[] = [];
 
-  constructor(private todoService: TodoService) {}
+  constructor(private todoService: TodoService) { }
 
   ngOnInit(): void {
     this.todoService.getToDos().subscribe((todo) => {
       this.toDoList = todo;
-    } )
+    })
   }
 
 }

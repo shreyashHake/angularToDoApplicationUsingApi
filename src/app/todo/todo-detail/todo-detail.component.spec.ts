@@ -8,9 +8,9 @@ describe('TodoDetailComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TodoDetailComponent ]
+      declarations: [TodoDetailComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(TodoDetailComponent);
     component = fixture.componentInstance;

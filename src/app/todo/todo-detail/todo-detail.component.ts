@@ -19,7 +19,7 @@ export class TodoDetailComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private todoService: TodoService
-  ) {}
+  ) { }
 
 
   ngOnInit() {

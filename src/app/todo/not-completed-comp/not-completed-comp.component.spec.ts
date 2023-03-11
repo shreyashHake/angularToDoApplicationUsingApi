@@ -8,9 +8,9 @@ describe('NotCompletedCompComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NotCompletedCompComponent ]
+      declarations: [NotCompletedCompComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(NotCompletedCompComponent);
     component = fixture.componentInstance;

@@ -5,9 +5,9 @@ import { NotCompletedCompComponent } from './not-completed-comp/not-completed-co
 import { TodoDetailComponent } from './todo-detail/todo-detail.component';
 
 const routes: Routes = [
-  {path: 'completed', component: CompletedCompComponent},
-  {path: 'notCompleted', component: NotCompletedCompComponent},
-  {path: 'details/:id', component: TodoDetailComponent}
+  { path: 'completed', component: CompletedCompComponent },
+  { path: 'notCompleted', component: NotCompletedCompComponent },
+  { path: 'details/:id', component: TodoDetailComponent }
 ];
 
 @NgModule({
