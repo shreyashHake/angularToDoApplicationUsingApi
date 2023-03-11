@@ -1,0 +1,15 @@
+<div *ngFor="let todo of toDoList">
+
+  <div *ngIf="todo.completed">
+    <br>
+    <div class="card text-center border-success mb-3">
+      <div class="card-header">
+        <h2>Task {{todo.id}}</h2>
+      </div>
+      <div class="card-body text-success">
+        <h5 class="card-title">{{todo.title | titlecase}}</h5>
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+</div>

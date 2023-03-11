@@ -16,6 +16,7 @@ export class TodoComponent implements OnInit{
 
   ngOnInit(): void {
     this.getToDo();
+
   }
 
   getToDo() {

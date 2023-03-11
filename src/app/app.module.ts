@@ -5,16 +5,22 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodoComponent } from './todo/todo.component';
+import { CompletedCompComponent } from './todo/completed-comp/completed-comp.component';
+import { NotCompletedCompComponent } from './todo/not-completed-comp/not-completed-comp.component';
+import { TodosModule } from './todo/todos.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponent
+    TodoComponent,
+    CompletedCompComponent,
+    NotCompletedCompComponent
   ],
   imports: [
     BrowserModule,
+    TodosModule,
+    HttpClientModule,
     AppRoutingModule,
-    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

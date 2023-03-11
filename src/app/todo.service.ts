@@ -1,10 +1,10 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { ToDo } from './ToDo';
 @Injectable({
   providedIn: 'root'
 })
-export class TodoService {
+export class TodoService implements OnInit {
 
   private heroesUrl = 'https://jsonplaceholder.typicode.com/todos/';  // URL to web api
 
@@ -12,12 +12,18 @@ export class TodoService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
 
-  toDoList: [] = [];
+  toDoList: ToDo[] = [];
 
   constructor(
-    private http: HttpClient){}
+    private http: HttpClient) {
 
-    getToDos() {
-      return this.http.get<ToDo[]>(this.heroesUrl);
-    }
+  }
+
+  getToDos() {
+    return this.http.get<ToDo[]>(this.heroesUrl);
+  }
+
+  ngOnInit(): void {
+
+  }
 }
