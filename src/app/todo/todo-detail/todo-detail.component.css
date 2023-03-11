@@ -1,0 +1,12 @@
+.card {
+  border: solid  1x black;
+  border-radius: 3px;
+  padding: 3px;
+  margin: 0 auto;
+  margin-top: 0.5%;
+  width: 70%;
+}
+
+.text-center a {
+  margin-top: 1%;
+}
